@@ -16,8 +16,6 @@
 #include "rpcestimator.h"
 #include "experiment.h"
 
-#include "Figure&Table.h"
-
 #include <omp.h>
 
 bool  InterpolateZ(const double& EX, const double& NY, double* HZ, const DEM_GRD& deminfo, float* dem)
@@ -1008,15 +1006,6 @@ int main(int argc, char* argv[])
 	//double* localResult = localQA(inputImage, proposeOut, traditionOut, rpbexFile, demFile, prjexFile);
 	//int* imageLocat = GeoCalculate_Direct(14213, 3226, proposeOut, rpbexFile, prjexFile, demFile);
 	//int* imageLocat2 = GeoCalculate_viaLL(14211, 3214, traditionOut, rpbFile, prjexFile, demFile);
-
-	//Figure12andTable2(14213, 3226, 14211, 3214, proposeOut, traditionOut,
-		//rpbexFile, rpbFile, prjexFile, demFile);
-	//Figure13andTable3(inputImage, proposeOut, traditionOut);
-	//Figure14andTable4(inputImage, proposeOut, traditionOut);
-	//Figure15andTable5(inputImage, proposeOut, traditionOut);
-
-	//Figure17(inputImage, proposeOut, traditionOut, rpbexFile, demFile, prjexFile);
-	Figure18(inputImage, proposeOut, traditionOut, rpbexFile, demFile, prjexFile);
 
 	return EXIT_SUCCESS;
 }
